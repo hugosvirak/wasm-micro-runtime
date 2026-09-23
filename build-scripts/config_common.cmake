@@ -215,6 +215,14 @@ if (NOT DEFINED WAMR_BUILD_EXTENDED_CONST_EXPR)
   set (WAMR_BUILD_EXTENDED_CONST_EXPR 0)
 endif ()
 
+if (NOT DEFINED WAMR_BUILD_ALLOC_WITH_USER_DATA)
+    set(WAMR_BUILD_ALLOC_WITH_USER_DATA 1)
+endif()
+
+if (NOT DEFINED WAMR_BUILD_ALLOC_WITH_USAGE)
+  set (WAMR_BUILD_ALLOC_WITH_USAGE 1)
+endif ()
+
 ########################################
 # Compilation options to marco
 ########################################
